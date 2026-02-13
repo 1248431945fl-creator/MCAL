@@ -1,0 +1,49 @@
+NMSF Dataset: Multimodal Depression Diagnosis
+
+The NMSF (Neuro-Speech Functional) dataset is designed for research in multimodal depression diagnosis, providing a comprehensive set of speech and resting-state fMRI data. This dataset includes samples of individuals with Major Depression (MD) and Healthy Controls (HC), along with demographic information.
+
+Dataset Details:
+
+Speech Data: All speech signals are resampled at 16 kHz and saved in .WAV format.
+
+fMRI Data: The resting-state fMRI data are acquired with the following parameters:
+
+Repetition Time (TR): 500 ms
+
+Echo Time (TE): 30 ms
+
+Field of View (FOV): 224 × 224 mm²
+
+Voxel Size: 3.5 × 3.5 × 3.5 mm³
+
+Slice Spacing: 0 mm
+
+35 slices per volume
+
+960 time points
+
+Preprocessing was conducted using the SPM12 and DPARSF toolbox with the following steps:
+
+Removal of the first 10 volumes
+
+Slice timing correction
+
+Head motion correction
+
+Spatial normalization to MNI standard space (3 × 3 × 3 mm³ voxels)
+
+Spatial smoothing with a 6 mm FWHM Gaussian kernel
+
+Temporal bandpass filter (0.01–0.08 Hz)
+
+The brain is parcellated into 90 regions of interest (ROIs) based on the Automated Anatomical Labeling (AAL) atlas. The mean signal of all voxels within each ROI is extracted for further analysis.
+
+Demographic Information:
+
+Age range: 19-39 years
+
+Groups: Healthy Controls (HC) and Major Depression (MD)
+
+Gender: 53 male and 150 female participants
+
+For more details on data acquisition and preprocessing, please refer to the full documentation.
