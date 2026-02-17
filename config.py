@@ -36,11 +36,12 @@ config = {
             "smooth_lambda": 0.05,                   # Smoothness regularization coefficient
             "lambda_p": 0.5,                         # Indirect effect weight
             "damping_factor": 0.85,                  # PageRank damping factor
-            "grandag_hidden": 64,                    # GraNDAG hidden layer dimension
-            "grandag_layers": 3,                     # Number of GraNDAG layers
-            "grandag_lambda_a": 1.0,                 # GraNDAG Lagrange multiplier
-            "grandag_rho_init": 1.0,                 # GraNDAG penalty parameter initial value
-            "grandag_rho_factor": 2.0,               # GraNDAG penalty parameter update factor
+            "grandag_hidden": 10,                    # GraNDAG hidden layer dimension
+            "grandag_layers": 2,                     # Number of GraNDAG layers
+            "grandag_lambda_a": 0,                 # GraNDAG Lagrange multiplier
+            "grandag_rho_init": 0.001,                 # GraNDAG penalty parameter initial value
+            "grandag_rho_factor": 10,               # GraNDAG penalty parameter update factor
         }
     }
+
 }
